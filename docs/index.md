@@ -14,7 +14,7 @@
 
 [Data](data.md)
 
-[Methods](methods.md]
+[Methods](methods.md)
 
 [Results](results.md)
 
