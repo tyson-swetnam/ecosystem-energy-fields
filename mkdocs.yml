@@ -141,7 +141,6 @@ extra_css:
   - stylesheets/extra.css
  
 plugins:
-    - blog
     - search
     - mkdocstrings
     - git-revision-date
