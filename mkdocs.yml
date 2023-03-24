@@ -66,8 +66,6 @@ theme:
     - navigation.top
     icon:
     logo: material/pine-tree-fire
-    admonition:
-      note: material/map-marker-radius-outline
 
 # Options
 extra:
