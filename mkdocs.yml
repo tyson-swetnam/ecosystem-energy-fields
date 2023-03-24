@@ -1,13 +1,13 @@
 docs_dir: docs/
 repo_name: 'tyson-swetnam/ecosystem-energy-fields'
-repo_url: 'https://github.com/tyson-swetnam/ecosystem-energy-fields''
+repo_url: 'https://github.com/tyson-swetnam/ecosystem-energy-fields'
 
 site_name: 'Ecosystems as Energy Fields'
 site_description: 'Documentation for associated research.'
 site_author: 'Tyson L Swetnam'
 site_url: 'https://tyson-swetnam.github.io/ecosystem-energy-fields'
 
-edit_uri: edit/mkdocs/docs
+edit_uri: edit/main/docs
 
 # Copyright
 copyright: 'Copyright &copy; 2023 Tyson Lee Swetnam'
@@ -92,7 +92,6 @@ extra:
     provider: google
     property: G-NYETZFD8DN
   
-
 extra_css:
   - stylesheets/extra.css
 
