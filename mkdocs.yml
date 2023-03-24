@@ -57,13 +57,6 @@ theme:
   font:
     text: Roboto
     code: Regular
-  features:
-    - navigation.instant
-    - navigation.tracking
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.indexes
-    - navigation.top
     icon:
     logo: material/pine-tree-fire
 
