@@ -17,6 +17,11 @@ copyright: 'Copyright &copy; 2023 Tyson Lee Swetnam'
 nav:
   - 'Home': 
     - 'Home': index.md 
+    - 'Background': background.md
+    - 'Data': data.md
+    - 'Methods': methods.md
+    - 'Results': results.md
+    - 'Conclusions': conclusions.md
     
 # JavaScript for Intercom Widget
 extra_javascript:
