@@ -59,9 +59,10 @@ theme:
     - navigation.tabs.sticky
     - navigation.indexes
     - navigation.top
-  favicon: assets/favicon.png
-  icon:
-    logo: material/truck-cargo-container 
+    icon:
+    logo: material/pine-tree-fire
+    admonition:
+      note: material/map-marker-radius-outline
 
 # Options
 extra:
