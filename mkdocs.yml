@@ -23,42 +23,56 @@ nav:
     - 'Results': results.md
     - 'Conclusions': conclusions.md
     
-# JavaScript for Intercom Widget
-extra_javascript:
-  - javascripts/intercom-learning.js
-  
-# Set theme to `readthedocs`
-# must also set Action to use `@nomaterial` branch instead of `@master` for material
+# Configuration
+
 theme:
-  name: material
-# setting features for the navigation tab
-  features:
-    - navigation.instant
-      #- navigation.expand
-    - navigation.tracking
-    - navigation.sections
-    - navigation.indexes
-    - toc.follow
+  name: 'material'
+
+  # 404 page
+  static_templates:
+    - 404.html
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
   # Default values, taken from mkdocs_theme.yml
   language: en
-  palette: 
-    - scheme: default
-      primary: teal
-      accent: blue
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
       toggle:
-        icon: material/brightness-3
-        name: Switch to dark mode
-    - scheme: slate
-      primary: black
-      accent: orange 
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: agic 
       toggle:
         icon: material/brightness-7
-        name: Switch to light mode
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
   font:
-    text: Roboto
+    text: Montserrat
     code: Regular
-    icon:
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - navigation.top
+  favicon: assets/favicon.png
+  icon:
     logo: material/pine-tree-fire
+    admonition:
+      note: material/map-marker-radius-outline
 
 # Options
 extra:
@@ -83,9 +97,6 @@ extra:
     provider: google
     property: G-NYETZFD8DN
   
-extra_css:
-  - stylesheets/extra.css
-
 # Extensions
 markdown_extensions:
   - admonition
@@ -107,8 +118,7 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-  - pymdownx.highlight:
-      anchor_linenums: true
+  - pymdownx.highlight
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.magiclink:
@@ -117,7 +127,6 @@ markdown_extensions:
       repo: mkdocs-material
   - pymdownx.mark
   - pymdownx.smartsymbols
-  - pymdownx.snippets
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -128,7 +137,11 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 
+extra_css:
+  - stylesheets/extra.css
+ 
 plugins:
+    - blog
     - search
     - mkdocstrings
     - git-revision-date
